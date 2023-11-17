@@ -1,0 +1,63 @@
+*, *::before, *::after{
+    box-sizing:border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+
+/* layout */
+
+.flex-container {
+    display: flex;
+}
+
+.container {
+    max-width: 760px;
+    margin: 0 auto;
+}
+
+header .container{
+    height: 9vh;
+    align-items: center;
+    padding: 1.3em 1em;
+    gap:1em;
+}
+
+.color-scheme-display-section .container{
+    height: 91vh;
+    padding: 0 1em;
+}
+
+.color-inpt, 
+.color-scheme-selector, 
+.get-color-scheme-btn, 
+.color-display, 
+.color-container,
+.pallete-size {
+    height: 100%;
+}
+
+.color-inpt {
+    width: 80px;
+}
+
+.color-scheme-selector, 
+.color-display,
+.color-container,
+.container {
+    width: 100%;
+}
+
+.get-color-scheme-btn {
+    width: 200px;
+    padding: 2px 11px;
+    font-size: 0.75em;
+}
+
+.color-container {
+    flex-direction: column;
+    text-align: center;
+}

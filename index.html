@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Scheme Generator</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <header>
+        <div class="container flex-container">
+            <input type="color" aria-label="color" class="color-inpt" id="color-inpt">
+            <select class="color-scheme-selector" id="color-scheme-selector">
+                <option>monochrome</option>
+                <option>monochrome-dark</option>
+                <option>monochrome-light</option>
+                <option>complement</option>
+                <option>analogic-complement</option>
+                <option>triad</option>
+                <option>quad</option>
+            </select>
+            <label for="pallete-size">Pallete size</label>
+            <input id="pallete-size" class="pallete-size" name="pallete-size" type="number" min="1" max="10">
+            <button class="get-color-scheme-btn" id="get-color-scheme-btn">Get color scheme</button>
+        </div>
+    </header>
+
+    <main>
+        <section class="color-scheme-display-section">
+            <div class="container flex-container" id="color-scheme-container">
+                <!-- color scheme goes here -->
+            </div>
+        </section>
+    </main>
+    <script src="index.js" type="module"></script>
+</body>
+</html>
